@@ -9,4 +9,4 @@
 게시글을 클릭하면 게시글 번호, 작성자, 내용, 작성일시, 조회수 등을 보여주는 기능을 추가할 것이다.
 
 사용하는 것은
-JAVA, SpringBoot 2.6.13, gradle, Maria DB, H2 DB, thymeleaf 등을 사용하여 구성할 계획이다.
+JAVA, SpringBoot 2.6.13, gradle, Maria DB, H2 DB, Spring JDBC, thymeleaf 등을 사용하여 구성할 계획이다.
