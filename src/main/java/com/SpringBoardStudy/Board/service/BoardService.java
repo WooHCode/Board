@@ -16,7 +16,5 @@ public interface BoardService {
 
     void updateArticle(Member member);
 
-    void deleteArticle(Member member);
-
-
+    void deleteArticleById(Integer id);
 }
