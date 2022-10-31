@@ -18,6 +18,26 @@ public class BoardServiceImpl implements BoardService{
 
     @Override
     public Iterable<Member> selectAll() {
-        return null;
+        return repository.findAll();
+    }
+
+    @Override
+    public Optional<Member> selectOneById(Integer id) {
+        return repository.findById(id);
+    }
+
+    @Override
+    public void insertText(Member member) {
+        repository.save(member);
+    }
+
+    @Override
+    public void updateText(Member member) {
+        repository.save(member);
+    }
+
+    @Override
+    public void deleteById(Integer id) {
+        repository.deleteById(id);
     }
 }

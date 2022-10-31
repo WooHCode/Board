@@ -5,7 +5,17 @@
     <title>hello</title>
 </head>
 <body>
-<h3> hello index!! </h3>
+<h3 th:text="${title}">제목</h3>
+<p th:if="${complete}" th:text="${complete}" style="color:blue"></p>
+<form method="post" th:action="${MemberForm?.newText}? @{/index/insert} : @{/index/update}"
+                    th:object="${MemberForm}">
+        <label>게시글 내용을 입력하세요.</label><br>
+        <textarea rows="10" cols="50" th:field="*{text}"></textarea>
+        <br>
+        <div th:if="${#fields.hasErrors('text')}" th:errors="*{text}" style="color:red"></div>
+
+
+</form>
 
 </body>
 </html>
