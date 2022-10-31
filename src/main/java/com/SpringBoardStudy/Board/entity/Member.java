@@ -1,18 +1,22 @@
 package com.SpringBoardStudy.Board.entity;
 
+import com.SpringBoardStudy.Board.BaseTimeEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Member {
+@Entity
+public class Member extends BaseTimeEntity {
     @Id
-    private Integer id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id", nullable = false)
+    private Long id;
 
     @NotBlank
     private String title;
@@ -24,4 +28,12 @@ public class Member {
     private String date;
 
     private Integer count;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

@@ -18,38 +18,6 @@ public class BoardServiceImpl implements BoardService{
 
     @Override
     public Iterable<Member> selectAll() {
-        return repository.findAll();
-    }
-
-    @Override
-    public Optional<Member> selectOneById(Integer id) {
-        return repository.findById(id);
-    }
-
-    @Override
-    public Boolean checkText(Integer id) {
-        Optional<Member> optMember = repository.findById(id);
-
-        if(optMember.isPresent()){
-            return false;
-        }else {
-
-        return true;}
-    }
-
-    @Override
-    public void insertArticle(Member member) {
-        repository.save(member);
-
-    }
-
-    @Override
-    public void updateArticle(Member member) {
-        repository.save(member);
-    }
-
-    @Override
-    public void deleteArticleById(Integer id) {
-        repository.deleteById(id);
+        return null;
     }
 }

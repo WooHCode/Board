@@ -8,13 +8,4 @@ public interface BoardService {
 
     Iterable<Member> selectAll();
 
-    Optional<Member> selectOneById(Integer id);
-
-    Boolean checkText(Integer id);
-
-    void insertArticle(Member member);
-
-    void updateArticle(Member member);
-
-    void deleteArticleById(Integer id);
 }
