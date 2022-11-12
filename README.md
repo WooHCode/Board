@@ -12,3 +12,5 @@
 JAVA, SpringBoot 2.6.13, gradle, Maria DB, H2 DB, Spring Data JPA, thymeleaf 등을 사용하여 구성할 계획이다.
 
 추가적으로 기본 개념에 대한 정리도 게시판 글을 이용하여 실제활용 해볼 계획이다
+
+mybatis와 jpa 를 비교하여 어떤 방식이 이점이있는지 확인한다
