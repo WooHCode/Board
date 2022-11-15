@@ -13,4 +13,5 @@ JAVA, SpringBoot 2.6.13, gradle, Maria DB, H2 DB, Spring Data JPA, thymeleaf 등
 
 추가적으로 기본 개념에 대한 정리도 게시판 글을 이용하여 실제활용 해볼 계획이다
 
-mybatis와 jpa 를 비교하여 어떤 방식이 이점이있는지 확인한다
+mybatis와 jpa 를 비교하여 어떤 방식이 이점이있는지 확인한다.
+실제로 개발을 진행하려고 보니 아직도 Spring에 대한 기본이 만들어져있지 않다고 판단이 되어 Spring에 대해 더 공부를 한 후 다시 진행하도록 하겠다.
